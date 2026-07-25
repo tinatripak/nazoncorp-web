@@ -83,7 +83,7 @@
 
 @media (max-width: 767px) {
   .hero-content {
-    width: 100%;
+    width: calc(100% - 24px);
   }
   .header-container {
     padding: 12px 12px;

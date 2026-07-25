@@ -278,7 +278,6 @@
   }
 
   .portfolio-filters {
-    flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 10px;
     margin-bottom: 28px;

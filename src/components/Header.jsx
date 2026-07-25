@@ -43,12 +43,9 @@ const Header = () => {
 
   const drawerList = (anchor) => (
     <div
-      className={clsx(
-        classes.list, 
-        {
+      className={clsx(classes.list, "nav-mobile", {
         [classes.fullList]: anchor === "top" || anchor === "bottom",
-      }),
-      "nav-mobile"}
+      })}
       role="presentation"
       onKeyDown={toggleDrawer(anchor, false)}
     >
@@ -59,7 +56,7 @@ const Header = () => {
           onClick={toggleDrawer(anchor, false)}
           aria-label="Close menu"
         >
-          <RxCross2 size="1.5rem" color="white"/>
+          <RxCross2 size="1.5rem" color="white" />
         </button>
       </div>
       <List
@@ -67,120 +64,140 @@ const Header = () => {
         aria-labelledby="nested-list-subheader"
         subheader={
           <ListSubheader component="div" className="text-center">
-    <Link
-      to="/"
-      onClick={toggleDrawer(anchor, false)}
-    >
-      <img
-        src={Logo}
-        alt="NazConCorp Logo"
-        className="img-fluid mobile-drawer-logo"
-        width="260"
-        height="75"
-      />
-    </Link>
-  </ListSubheader>
+            <Link to="/" onClick={toggleDrawer(anchor, false)}>
+              <img
+                src={Logo}
+                alt="NazConCorp Logo"
+                className="img-fluid mobile-drawer-logo"
+                width="260"
+                height="75"
+              />
+            </Link>
+          </ListSubheader>
         }
       >
         <Divider className="mt-4" />
 
         {[
-          { text: "Home", path: "/", icon:<GoHome color="white" size={"1.5rem"}/> },
-          { text: "Services", path: "/services", icon:<MdConstruction color="white" size={"1.5rem"}/> },
-          { text: "Portfolio", path: "/portfolio", icon:<CiImageOn color="white" size={"1.5rem"}/> },
-          { text: "About Us", path: "/about-us", icon:<CiCircleInfo color="white" size={"1.5rem"}/> },
-          { text: "Contact Us", path: "/contact-us", icon:<CiPhone color="white" size={"1.5rem"}/> },
+          {
+            text: "Home",
+            path: "/",
+            icon: <GoHome color="white" size={"1.5rem"} />,
+          },
+          {
+            text: "Services",
+            path: "/services",
+            icon: <MdConstruction color="white" size={"1.5rem"} />,
+          },
+          {
+            text: "Portfolio",
+            path: "/portfolio",
+            icon: <CiImageOn color="white" size={"1.5rem"} />,
+          },
+          {
+            text: "About Us",
+            path: "/about-us",
+            icon: <CiCircleInfo color="white" size={"1.5rem"} />,
+          },
+          {
+            text: "Contact Us",
+            path: "/contact-us",
+            icon: <CiPhone color="white" size={"1.5rem"} />,
+          },
           { text: "Request a Quote", path: "/contact-us#quote", button: true },
-        ].map(({ text, path, icon, button }) => (
+        ].map(({ text, path, icon, button }) =>
           button ? (
-    <Link
-      key={text}
-      to={path}
-      className="btn mobile-quote-btn"
-      onClick={toggleDrawer(anchor, false)}
-    >
-      {text}
-    </Link>
-  ) : (
-    <Link key={text} to={path}>
-      <ListItemButton onClick={toggleDrawer(anchor, false)}>
-        <ListItemIcon>
-          {icon}
-        </ListItemIcon>
-        <ListItemText primary={text} />
-      </ListItemButton>
-    </Link>
-  )
-        ))}
+            <Link
+              key={text}
+              to={path}
+              className="btn mobile-quote-btn"
+              onClick={toggleDrawer(anchor, false)}
+            >
+              {text}
+            </Link>
+          ) : (
+            <Link key={text} to={path}>
+              <ListItemButton onClick={toggleDrawer(anchor, false)}>
+                <ListItemIcon>{icon}</ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </Link>
+          ),
+        )}
       </List>
     </div>
   );
 
   React.useEffect(() => {
-  const logoImage = new Image();
-  logoImage.src = Logo;
-}, []);
+    const logoImage = new Image();
+    logoImage.src = Logo;
+  }, []);
 
   return (
     <header className="header sticky">
       <Container className="header-container">
         <Navbar expand="xl">
           <Navbar.Brand as={Link} to="/">
-            <img src={Logo} alt="NazConCorp Logo" className="img-fluid mlogo" width="300"
-    height="90"/>
+            <img
+              src={Logo}
+              alt="NazConCorp Logo"
+              className="img-fluid mlogo"
+              width="300"
+              height="90"
+            />
           </Navbar.Brand>
 
           <Navbar.Collapse
             id="basic-navbar-nav"
             className="justify-content-end"
           >
-           <Nav>
-            <NavLink
-              to="/"
-              end
-              className={({ isActive }) =>
-                `nav-link header-nav-link${isActive ? " active" : ""}`
-              }
-            >
-              Home
-            </NavLink>
+            <Nav>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                  `nav-link header-nav-link${isActive ? " active" : ""}`
+                }
+              >
+                Home
+              </NavLink>
 
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                `nav-link header-nav-link${isActive ? " active" : ""}`
-              }
-            >
-              Services
-            </NavLink>
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  `nav-link header-nav-link${isActive ? " active" : ""}`
+                }
+              >
+                Services
+              </NavLink>
 
-            <NavLink
-              to="/portfolio"
-              className={({ isActive }) =>
-                `nav-link header-nav-link${isActive ? " active" : ""}`
-              }
-            >
-              Portfolio
-            </NavLink>
+              <NavLink
+                to="/portfolio"
+                className={({ isActive }) =>
+                  `nav-link header-nav-link${isActive ? " active" : ""}`
+                }
+              >
+                Portfolio
+              </NavLink>
 
-            <NavLink
-              to="/about-us"
-              className={({ isActive }) =>
-                `nav-link header-nav-link${isActive ? " active" : ""}`
-              }
-            >
-              About Us
-            </NavLink>
+              <NavLink
+                to="/about-us"
+                className={({ isActive }) =>
+                  `nav-link header-nav-link${isActive ? " active" : ""}`
+                }
+              >
+                About Us
+              </NavLink>
 
-            <NavLink
-              to="/contact-us"
-              className={({ isActive }) =>
-                `nav-link header-nav-link${isActive ? " active" : ""}`
-              }
-            >
-              Contact Us
-            </NavLink>
-          </Nav>
+              <NavLink
+                to="/contact-us"
+                className={({ isActive }) =>
+                  `nav-link header-nav-link${isActive ? " active" : ""}`
+                }
+              >
+                Contact Us
+              </NavLink>
+            </Nav>
           </Navbar.Collapse>
           <Link
             to="/contact-us#quote"
@@ -202,8 +219,9 @@ const Header = () => {
               onClose={toggleDrawer("right", false)}
               ModalProps={{
                 keepMounted: true,
-              }}>
-                {drawerList("right")}
+              }}
+            >
+              {drawerList("right")}
             </Drawer>
           </div>
         </Navbar>
