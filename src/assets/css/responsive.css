@@ -1,0 +1,208 @@
+@media (max-width: 1199px) {
+  .desktop-quote-btn {
+    display: none;
+  }
+
+  .MuiListItemIcon-root {
+    min-width: 42px !important;
+  }
+
+  .MuiButtonBase-root {
+    margin-bottom: 1rem !important;
+    border-bottom: 1px solid rgb(162 121 78 / 50%) !important;
+  }
+
+  .MuiDrawer-paper img {
+    padding: 2rem 0;
+    border-bottom: 1px solid rgb(162 121 78);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .slider .carousel-caption {
+    top: 25%;
+    width: 16rem;
+    height: 16rem;
+    padding: 20px 0 20px 98px;
+  }
+  .navbar-light .navbar-nav {
+    gap: 1%;
+  }
+
+  .slider h1,
+  .slider h2 {
+    font-size: 2.5rem;
+  }
+
+  .slider .carousel-indicators {
+    top: 42%;
+  }
+}
+
+.desktop-quote-btn {
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  .slider .carousel-caption {
+    top: 19%;
+    width: 16rem;
+    height: 16rem;
+    padding: 20px 0 20px 98px;
+  }
+
+  .slider h1,
+  .slider h2 {
+    font-size: 2.5rem;
+  }
+
+  .slider .carousel-indicators {
+    top: 42%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .slider .carousel-caption {
+    top: 20%;
+    left: 10%;
+    width: 14rem;
+    height: 14rem;
+    padding: 20px 0 20px 60px;
+  }
+
+  .slider h1,
+  .slider h2 {
+    font-size: 2rem;
+  }
+
+  .slider .carousel-indicators {
+    top: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-content {
+    width: 100%;
+  }
+  .header-container {
+    padding: 12px 12px;
+  }
+  .entry {
+    padding-top: 30px;
+  }
+
+  .info h4 {
+    margin: -56px 0 0 3px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .info h4 span {
+    font-size: 6rem;
+  }
+
+  section h2 {
+    font-size: 14px;
+    margin-bottom: 9px;
+  }
+
+  section p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .btn-primary {
+    margin-top: unset;
+  }
+
+  .benefits h4,
+  .benefits p,
+  .benefits a {
+    margin-left: 66px;
+  }
+
+  .benefits h4 {
+    font-size: 16px;
+  }
+
+  .benefits p {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 2px;
+  }
+
+  .benefits a {
+    font-size: 14px;
+  }
+
+  section h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .mlogo {
+    width: 220px;
+  }
+
+  #footer {
+    padding: 28px 0 60px;
+  }
+
+  #footer .links,
+  .copyright {
+    text-align: center;
+  }
+
+  .css-jn8x8h {
+    left: unset !important;
+    transform: translate(0%, -50%) !important;
+    -webkit-transform: translate(0%, -50%) !important;
+    -moz-transform: translate(0%, -50%) !important;
+    -ms-transform: translate(0%, -50%) !important;
+  }
+
+  .slider .carousel-caption {
+    top: 25%;
+    left: 6%;
+    width: 10rem;
+    height: 10rem;
+    padding: 20px 0 20px 50px;
+  }
+
+  .slider h1,
+  .slider h2 {
+    font-size: 1.6rem;
+    width: 50% !important;
+  }
+
+  .slider .carousel-indicators {
+    top: 85%;
+    left: 35%;
+  }
+
+  .slider .carousel-indicators [data-bs-target] {
+    display: inline !important;
+    justify-content: space-around !important;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-content {
+    left: 12px;
+  }
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 32%;
+  }
+
+  .sliders h1,
+  .sliders h2 {
+    font-size: 32px !important;
+  }
+}
