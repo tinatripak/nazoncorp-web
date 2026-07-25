@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
 import Logo from "../assets/images/logo/logo.svg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
-import RoomIcon from "@mui/icons-material/Room";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const Footer = () => {
-  const { pathname } = useLocation();
   const currentYear = new Date().getFullYear();
 
   return (

@@ -1,5 +1,4 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import HomeBg from "../assets/images/home-bg.png";
