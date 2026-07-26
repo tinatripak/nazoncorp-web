@@ -134,7 +134,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header sticky">
+    <header className="header">
       <Container className="header-container">
         <Navbar expand="xl">
           <Navbar.Brand as={Link} to="/">
