@@ -9,8 +9,6 @@
   margin: 0 auto;
 }
 
-/* Hero */
-
 .privacy-hero {
   position: relative;
   overflow: hidden;
@@ -99,8 +97,6 @@
   line-height: 1.8;
 }
 
-/* Main layout */
-
 .privacy-main {
   padding: 80px 0 110px;
 }
@@ -111,8 +107,6 @@
   gap: 72px;
   align-items: start;
 }
-
-/* Sidebar */
 
 .privacy-sidebar {
   position: sticky;
@@ -150,8 +144,6 @@
   color: #b98242;
   transform: translateX(3px);
 }
-
-/* Content */
 
 .privacy-content {
   min-width: 0;
@@ -230,8 +222,6 @@
   color: #b98242;
 }
 
-/* Contact card */
-
 .privacy-contact-card {
   padding: 28px;
   border: 1px solid rgba(185, 130, 66, 0.3);
@@ -267,8 +257,6 @@
   color: #ffffff;
 }
 
-/* Tablet */
-
 @media (max-width: 900px) {
   .privacy-layout {
     grid-template-columns: 190px minmax(0, 1fr);
@@ -279,8 +267,6 @@
     padding: 22px;
   }
 }
-
-/* Mobile */
 
 @media (max-width: 720px) {
   .privacy-container {
