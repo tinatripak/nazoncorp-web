@@ -60,9 +60,11 @@ function AboutUs() {
           <div className="about-heading-line" />
 
           <p>
-            We are a team of skilled professionals specializing in tile and
-            stone installation. With years of experience and a commitment to
-            excellence, we transform spaces into timeless works of art.
+            With over 10 years of experience in tile and stone installation, our
+            skilled team is dedicated to delivering exceptional craftsmanship on
+            every project. We transform residential and commercial spaces into
+            timeless works of art using precision, quality materials, and
+            attention to every detail.
           </p>
         </div>
       </section>
