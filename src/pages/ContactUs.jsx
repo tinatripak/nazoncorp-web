@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { LuMail, LuMapPin, LuPhone, LuSend } from "react-icons/lu";
-// import { FORMSPREE_ENDPOINT } from "../config";
 import "./ContactUs.css";
 
 const initialForm = {

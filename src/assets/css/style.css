@@ -192,7 +192,6 @@ section h3.type-2::after {
   gap: 8px;
 }
 
-/* Bottom sticky action bar */
 .sticky-footer-actions {
   position: fixed;
   right: 0;
