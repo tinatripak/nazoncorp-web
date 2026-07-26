@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { CiChat1 } from "react-icons/ci";
+import { FaAward, FaUsers } from "react-icons/fa";
 import { MdOutlineVerified } from "react-icons/md";
-import { PiClockCountdownLight, PiMedalLight } from "react-icons/pi";
+import { PiClockCountdownLight } from "react-icons/pi";
 
 import "./ChooseUs.css";
 
@@ -9,12 +10,12 @@ const benefits = [
   {
     title: "High Quality",
     description: "Premium materials",
-    Icon: PiMedalLight,
+    Icon: MdOutlineVerified,
   },
   {
     title: "Expert Team",
     description: "Skilled professionals",
-    Icon: MdOutlineVerified,
+    Icon: FaUsers,
   },
   {
     title: "Timely Delivery",
@@ -22,9 +23,9 @@ const benefits = [
     Icon: PiClockCountdownLight,
   },
   {
-    title: "Fully Insured",
-    description: "Your peace of mind",
-    Icon: MdOutlineVerified,
+    title: "10+",
+    description: "Years of xperience",
+    Icon: FaAward,
   },
 ];
 

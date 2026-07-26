@@ -13,7 +13,7 @@ const services = [
     Icon: MdOutlineArchitecture,
   },
   {
-    title: "Residential",
+    title: "Residential & Commercial",
     description: "Construction & Renovation",
     Icon: MdOutlineChair,
   },
